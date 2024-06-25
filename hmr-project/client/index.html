@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMR Lecture</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <h2>HMR lecture</h2>
+    <div class="flex">
+        <p>[name.js] - Name state</p>
+        <form id="name-form">
+            <label for="name-input">Enter your name:</label>
+            <input type="text" id="name-input" name="name-input">
+            <button type="submit">Submit Name</button>
+        </form>
+        <div id="name-state" class="name-result"></div>
+    </div>
+
+    <hr class="separation" />
+    <!-- <p>Test Changes</p> -->
+    <div class="flex">
+        <p>[todoList.js] - TODO List state</p>
+        <form id="todo-form">
+            <label for="todo-input">Enter new todo:</label>
+            <input type="text" id="todo-input" name="todo-input">
+            <button type="submit">Submit Todo</button>
+        </form> 
+        <ul id="todo-list-state" class="todo-list-result"></ul>
+    </div>
+    <!-- Once the DOM is fully loaded - load a file that manipulates the DOM -->
+    <script type="module" src="/js/name.js"></script>
+    <script type="module" src="/js/todoList.js"></script>
+</body>
+
+</html>
